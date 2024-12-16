@@ -1,0 +1,195 @@
+[{
+  "_id": {
+    "$oid": "66e70e626262c5c256b8ad5d"
+  },
+  "name": "Test lần nữa",
+  "description": "Testtt",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726418530/atmruiqnloyxuco0mcw9.png",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-15T16:42:10.774Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-21T08:48:15.158Z"
+  },
+  "slug": "test-lan-nua",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-09-21T08:48:15.156Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e7105400f17605f81d18bc"
+  },
+  "name": "Test lần nữa 123",
+  "description": "Testtt sadasdas",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726419028/dthewg7zzb8eb65lrj0k.png",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-15T16:50:28.527Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-21T08:48:15.158Z"
+  },
+  "slug": "test-lan-nua-123",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-09-21T08:48:15.156Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e712540ab16e3681fa33b6"
+  },
+  "name": "Test lần nữa 123",
+  "description": "Testtt sadasdas",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726419539/zvoueuthajsq0qzpuk29.png",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-15T16:59:00.174Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-21T08:48:15.158Z"
+  },
+  "slug": "Test lần nữa 123",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-09-21T08:48:15.156Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e715666b4f12264bde72fe"
+  },
+  "name": "Test lần nữa 123",
+  "description": "Testtt sadasdas",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726420326/yflk3yurp4wvezswij09.png",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-15T17:12:06.572Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-21T08:48:15.158Z"
+  },
+  "slug": "test-lan-nua-123-vSToyghQr",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-09-21T08:48:15.156Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66e918cd6b4f12264bde7308"
+  },
+  "name": "Sự kết hợp giữa cặp đôi quyền lực: Crypto và AI trong tương lai 3",
+  "description": "Testtt sadasdas",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726552268/hdecvdihuisr66kgm5d0.png",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-17T05:51:09.298Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-16T14:59:44.879Z"
+  },
+  "slug": "su-ket-hop-giua-cap-doi-quyen-luc-crypto-va-ai-trong-tuong-lai-3",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-12-16T14:59:44.876Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ee886772242020be8385ea"
+  },
+  "name": "Sự kết hợp giữa cặp đôi quyền lực: Crypto và AI trong tương lai 4",
+  "description": "Testtt sadasdas",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726908518/ngaoz1o67abpxg6fq0se.png",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-21T08:48:39.017Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-16T15:09:39.223Z"
+  },
+  "slug": "su-ket-hop-giua-cap-doi-quyen-luc-crypto-va-ai-trong-tuong-lai-4",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-12-16T15:09:39.222Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ee889672242020be8385f2"
+  },
+  "name": "Sự kết hợp giữa cặp đôi quyền lực: Crypto và AI trong tương lai 5",
+  "description": "Testtt sadasdas",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726908566/ggpemknvf6qhpgjoi61d.jpg",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-21T08:49:26.938Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-16T15:09:39.223Z"
+  },
+  "slug": "su-ket-hop-giua-cap-doi-quyen-luc-crypto-va-ai-trong-tuong-lai-5",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-12-16T15:09:39.222Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66ee88af72242020be8385fa"
+  },
+  "name": "Sự kết hợp giữa cặp đôi quyền lực: Crypto và AI trong tương lai 6",
+  "description": "Testtt sadasdas",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1726908591/bo5hi6pk8zsf0xtufmbb.png",
+  "videoId": "WKazqEomxmA",
+  "level": "intern",
+  "deleted": true,
+  "createdAt": {
+    "$date": "2024-09-21T08:49:51.754Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-16T15:09:39.223Z"
+  },
+  "slug": "su-ket-hop-giua-cap-doi-quyen-luc-crypto-va-ai-trong-tuong-lai-6",
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2024-12-16T15:09:39.222Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "676044dbabd0e492613a8459"
+  },
+  "name": "Java Spring boot",
+  "description": "Trong bài viết này chúng ta sẽ cùng nhau tìm hiểu về Spring Boot một trong những framework đình đám nhất tại thời điểm hiện tại của Java dùng để phát triển các ứng dụng Java. \r\n\r\nThế nhưng, cho dù bạn đã từng làm việc với Spring framework hay chưa thì chúng ta cũng nên biết về nó một chút. Vì mình thấy rất nhiều người hay nhầm lẫn giữa Spring và Spring Boot. Và nếu các bạn đi phỏng vấn thì câu hỏi này được xem là then chốt để xem bạn có hiểu mình rằng mình đang làm Spring Boot là làm cái gì hay chỉ là một thằng chỉ biết code và code mà thôi.",
+  "image": "https://res.cloudinary.com/ddfduo44p/image/upload/v1734362332/m3tjqmkp5z8uo7qkuc1l.png",
+  "videoId": "9SGDpanrc8U",
+  "level": "Middle",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-12-16T15:18:51.557Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-16T15:18:51.557Z"
+  },
+  "slug": "java-spring-boot",
+  "__v": 0
+}]
