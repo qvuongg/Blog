@@ -1,0 +1,21 @@
+<h1>Kết quả tìm kiếm: {{courses.length}}</h1>
+<ul>
+    {{#each courses}}
+        <div style="width: 50%;" class="card card-course-item h-100">
+            <a href="/courses/{{this.slug}}">
+                <img class="card-img-top" src="{{this.image}}" alt="{{this.name}}">
+            </a>
+            <div class="card-body">
+                <a href="/courses/{{this.slug}}">
+                    <h3 class="card-title">{{this.name}}</h3>
+                </a>
+                <p class="card-text">{{this.description}}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-muted">{{this.user}}</span>
+                    <span class="text-muted">• {{formatDate this.createdAt}}</span>
+                </div>
+                <a href="/courses/{{this.slug}}" class="btn btn-primary mt-3">Xem chi tiết</a>
+            </div>
+        </div>
+    {{/each}}
+</ul>

@@ -1,0 +1,99 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="flex-grow-1">
+      <a class="navbar-brand" href="/">BK Insights</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+  {{!-- <!-- Giá các đồng coin -->
+    <div class="crypto-prices d-flex flex-grow-1 justify-content-center">
+      {{#each cryptoData}}
+      <div class="small-div-horizontal text-center mx-3">
+        <h3 class="name-coin">{{this.name}}</h3>
+        <h3 class="price">$ {{this.price}}</h3>
+        <h3 class="volatility {{#if this.isPositive}}positive{{else}}negative{{/if}}">
+          {{#if this.isPositive}}
+            &#9650; {{this.volatility}}%
+          {{else}}
+            &#9660; {{this.volatility}}%
+          {{/if}}
+        </h3>
+      </div>
+      {{/each}}
+    </div> --}}
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        {{#showLogin user.role}}
+            <a class="dropdown-item active" href="/auth/login">Đăng nhập</a>
+        {{/showLogin}}
+        {{#ifRole user.role 'admin'}}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                <img src="" alt="" class="user-avatar">
+                {{user.userName}}
+            </a>
+            <div style="margin-left: -120px;" class="dropdown-menu">
+                <span class="dropdown-item">{{user.email}}</span>
+                
+
+                <!-- Hiển thị các item cho admin -->
+                  <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/courses/create">Đăng khoá học</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/me/stored/courses">Khoá học của tôi</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/me/stored/courses">Bài đăng của tôi</a>
+                
+
+                <!-- Hiển thị các item cho user -->
+                {{#ifRole user.role 'user'}}
+                    <a class="dropdown-item" href="/user/saved">Đã lưu</a>
+                {{/ifRole}}
+
+                <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/auth/logout">Đăng xuất</a>
+            </div>
+        </li>
+        {{/ifRole}}
+
+        {{#ifRole user.role 'user'}}
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                <img src="" alt="" class="user-avatar">
+                {{user.userName}}
+            </a>
+            <div style="margin-left: -114px;" class="dropdown-menu">
+                <span class="dropdown-item">{{user.email}}</span>
+                    <a class="dropdown-item" href="/auth/logout">Đăng xuất</a>
+            </div>
+        </li>
+        {{/ifRole}}
+    </ul>
+</div>
+
+
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="
+    padding-left: 30px;
+    padding-right: 30px;" >
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-1">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Trang Chủ <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Giới Thiệu <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+<a class="nav-link" href="#">Tin Tức <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="/search" method="GET">
+    <input class="form-control mr-sm-2" type="search" name="q" placeholder="Search" aria-label="Search" value="{{value}}">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form>
+
+  </div>
+</nav>
+
+<script src="/js/header.js"></script>

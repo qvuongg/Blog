@@ -1,0 +1,96 @@
+<div style="
+        font-family: Arial, sans-serif;
+        {{!-- background-color: #f9f9f9; --}}
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    ">
+    <div style="
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    ">
+        {{#if alert}}
+        <div style="
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+            color: #155724;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            text-align: center;
+        ">
+            {{alert}}
+        </div>
+        {{/if}}
+        <form method="POST" action="signin">
+            <h1 style="
+                font-size: 1.8rem;
+                color: #333;
+                text-align: center;
+                margin-bottom: 1.5rem;
+            ">Đăng nhập</h1>
+            <div style="margin-bottom: 1rem;">
+                <label for="email" style="
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                    color: #555;
+                ">Email</label>
+                <input type="text" id="email" name="email" placeholder="Nhập email của bạn" style="
+                    width: 100%;
+                    padding: 0.75rem;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    outline: none;
+                    transition: border-color 0.3s;
+                " onfocus="this.style.borderColor='#007bff'" onblur="this.style.borderColor='#ddd'">
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <label for="password" style="
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                    color: #555;
+                ">Mật khẩu</label>
+                <input type="password" id="password" name="password" placeholder="Nhập mật khẩu của bạn" style="
+                    width: 100%;
+                    padding: 0.75rem;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    outline: none;
+                    transition: border-color 0.3s;
+                " onfocus="this.style.borderColor='#007bff'" onblur="this.style.borderColor='#ddd'">
+            </div>
+            <div style="margin-bottom: 1rem;">
+                <button type="submit" style="
+                    width: 100%;
+                    padding: 0.75rem;
+                    font-size: 1rem;
+                    color: #fff;    
+                    background-color: #007bff;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                " onmouseover="this.style.backgroundColor='#0056b3'" onmouseout="this.style.backgroundColor='#007bff'">Đăng nhập</button>
+                <a href="/auth/register" style="
+                    display: inline-block;
+                    margin-top: 1rem;
+                    text-align: center;
+                    width: 100%;
+                    color: #007bff;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                " onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Chưa có tài khoản? Đăng ký ngay</a>
+            </div>
+        </form>
+    </div>
+</div>
