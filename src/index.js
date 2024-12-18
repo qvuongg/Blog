@@ -14,7 +14,7 @@ const dotenv = require('dotenv');
 const helmet = require('helmet');
 const cloudinary = require('cloudinary').v2;
 const methodOverride = require('method-override')
-
+const crypto = require('crypto');
 
 
 
@@ -35,11 +35,14 @@ db.connect()
 app.use(express.static(path.join(__dirname, 'public')));
 //HTTP logger
 //app.use(morgan('combined'))
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(methodOverride('_method')); // Cho phép ghi đè method
 // app.use(bodyParser.urlencoded({ extended: true }));
 
-//
+
+
 
 //Clouddinary
 cloudinary.config({
@@ -47,8 +50,6 @@ cloudinary.config({
     api_key: process.env.CLOUDINARY_API_KEY,
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
-
-app.use(methodOverride('_method'))
 // Cấu hình session
 app.use(session({
     secret: 'secret', // Bạn nên thay đổi secret này
@@ -62,19 +63,11 @@ app.use(flash());
 // Sử dụng cookie-parser middleware
 app.use(cookieParser());
 
-app.use(helmet.contentSecurityPolicy({
-    directives: {
-        defaultSrc: ["'self'"],
-        imgSrc: ["'self'", "https://res.cloudinary.com"],
-        scriptSrc: ["'self'", "https://cdn.jsdelivr.net"]
-    }
-}));
-
 app.use(express.json({ limit: "5mb" }));
 
+app.use(express.static(path.join(__dirname, 'src', 'public')));
 
 //custom middleware
-app.use(CryptoPriceMiddleware);
 app.use(SortMiddleware);
 app.use(SetUserInfo);
 

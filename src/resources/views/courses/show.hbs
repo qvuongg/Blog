@@ -1,15 +1,57 @@
-<div class="mt-4">
-    <div class="row">
-        <div class="col-lg-3">
-            <button> Học ngay</button>
+<div class="container mt-5">
+    <div class="row align-items-start">
+        <!-- Phần thông tin khóa học -->
+        <div class="col-lg-7 ">
+            
+            <h1 class="mb-3" style="font-size: 2.5rem; font-weight: bold; color: #2c3e50;">{{course.name}}</h1>
+            <p class="mb-4" style="font-size: 1.1rem; line-height: 1.8; color: #555;">
+                {{course.description}}
+            </p>
+            <div class="mb-4 text-center">
+                <img src="{{course.image}}" alt="Course Image"
+                    style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            </div>
+
+            <h4 class="fw-bold" style="color: #e74c3c; margin-bottom: 20px;">Nội dung khóa học</h4>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 15px;">
+                    <span style="color: #27ae60; font-weight: bold;">✔</span> Biết cách cài đặt và tùy biến Windows
+                    Terminal
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <span style="color: #27ae60; font-weight: bold;">✔</span> Thành thạo các lệnh Linux/Ubuntu
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <span style="color: #27ae60; font-weight: bold;">✔</span> Hiểu về Ubuntu và tự cài đặt các phần mềm
+                    khác
+                </li>
+                <li style="margin-bottom: 15px;">
+                    <span style="color: #27ae60; font-weight: bold;">✔</span> Biết cách triển khai NodeJS và ReactJS
+                </li>
+            </ul>
         </div>
 
-        <div class="col-lg-3">
-            <h2 style="width: 600px;">{{course.name}}</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{course.videoId}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="no-referrer" allowfullscreen></iframe>
-            <h2>{{course.level}}</h2>
-            <img style="width: 560px;" src={{course.image}} alt="Course Image">
-            <p style="width: 600px;">{{course.description}}</p>
+        <!-- Phần video và thông tin phụ -->
+        <div class="col-lg-4 offset-lg-1" >
+            <!-- Video khóa học -->
+            <div class="text-center mb-4">
+                <div style="border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <iframe width="100%" height="215" src="https://www.youtube.com/embed/{{course.videoId}}"
+                        title="Giới thiệu khóa học" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Thông tin khóa học -->
+            <div class="text-center p-3"
+                style="background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <h3 class="text-danger fw-bold mb-3" style="font-size: 2rem;">Miễn phí</h3>
+                <a href="#" class="btn btn-primary btn-lg mb-3" style="border-radius: 25px; padding: 10px 30px;">Đăng ký
+                    học</a>
+                <ul class="list-unstyled text-start">
+                    <li class="mb-2"><strong>🎓 Trình độ:</strong> {{course.level}}</li>
+                    <li class="mb-2"><strong>🌐 Học mọi lúc, mọi nơi</strong></li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

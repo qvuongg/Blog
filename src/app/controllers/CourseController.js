@@ -55,11 +55,16 @@ class CourseController {
 
     // PUT /courses/:id
     update(req, res, next) {
-        const updateData = req.file ? { ...req.body, image: `/uploads/${req.file.filename}` } : req.body;
-        Course.updateOne({ _id: req.params.id }, updateData)
-            .then(() => res.redirect('/home'))
-            .catch(next);
-    }
+    const { id } = req.params;
+    const updateData = req.body;
+
+    Course.updateOne({ _id: id }, updateData)
+        .then(() => res.redirect('/home')) 
+        .catch(err => {
+            console.error(err);
+            res.status(500).send("Cập nhật thất bại!");
+        });
+}
 
     // DELETE /courses/:id
     destroy(req, res, next) {

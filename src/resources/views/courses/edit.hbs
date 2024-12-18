@@ -1,13 +1,13 @@
 <div class="mt-4">
     <h3>Sửa khoá học</h3>
-    <form class= "mt-4" method="POST" action="/courses/{{course._id}}?_method=PUT" enctype="multipart/form-data">
+    <form class= "mt-4" method="POST" action="/courses/{{course._id}}?_method=PUT">
         <div class="form-group">
             <label for="name">Tên khoá học</label>
             <input type="text" class="form-control" value="{{course.name}}" id="name" name="name" >      
         </div>
         <div class="form-group">
-            <label for="name">Mô tả</label>
-            <input type="text" class="form-control" value="{{course.description}}" id="description" name="description" >      
+            <label for="description">Mô tả</label>
+            <textarea class="form-control" rows="10" id="description" name="description">{{course.description}}</textarea>
         </div>
         <div class="form-group">
             <label for="name">Video ID</label>
